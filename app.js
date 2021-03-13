@@ -7,12 +7,11 @@ Write a function called sum() that takes in two numbers as arguments and then re
 
 Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testSum() function below and check the console to see if the test passes.*/
 
-// Write your code here
-// function sum(a, b) {
-//   let total = a + b;
-//   return [total, `The sum of ${a} and ${b} is ${total}.`]
-
-// }
+//Write your code here
+function sum(a, b) {
+  return a + b;
+  //return [total, `The sum of ${a} and ${b} is ${total}.`]
+}
 
 // Here is the test for sum(); uncomment it to run it
 //testSum(4, 7);
@@ -29,12 +28,12 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Write your code here
 function multiply(a, b) { 
-  let total = a * b;
-  return [total, `The product of ${a} and ${b} is ${total}.`];
+  return a * b;
+  //return [total, `The product of ${a} and ${b} is ${total}.`];
 }
 
 // Here is the test for multiply(); uncomment it to run it
-testMultiply(5, 9);
+//testMultiply(5, 9);
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. Don't forget to create a new branch for your work on the next question!
 
@@ -50,12 +49,19 @@ IMPORTANT DETAIL: You may not use the arithmetic operators + and * in this funct
 Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testSumAndMultiply() function and see if the test passes.*/
 
 // Write your code here
-function sumAndMultiply(a, b, c) { //eslint-disable-line
-
+function sumAndMultiply(a, b, c) { 
+  let add1 = sum(a,b);
+  let add2 = sum(add1,c);
+  let multi1 = multiply(a,b);
+  let multi2 = multiply(multi1,c);
+  console.log(add2);
+  //console.log(multi2);
+  return [add2, multi2, `${a} and ${b} and ${c} sum to ${add2}.`, `The product of ${a} and ${b} and ${c} is ${multi2}.`];
 }
 
+
 // Here is the test for sumAndMultiply(); uncomment it to run it
-// testSumAndMultiply(4,7,5);
+testSumAndMultiply(4,7,5);
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. Don't forget to create a new branch for your work on the next question!
 
