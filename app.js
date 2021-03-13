@@ -117,12 +117,21 @@ testSumArray(testArray);
 // Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testMultiplyArray() function and see if the test passes.*/
 
 // // Write your code here
-// function multiplyArray(multArr) { //eslint-disable-line
+function multiplyArray(multArr) { //eslint-disable-line
+    let arrayProduct = 1;
+    let stringProduct = '';
+    for (let i = 0; i < multArr.length; i++) {
+        arrayProduct = multiply(arrayProduct, multArr[i])[0];
+    }
+        stringProduct = "The numbers " + multArr[0] + "," + multArr[1] + "," + multArr[2] + " have a product of " + arrayProduct + ".";
 
-// }
+        return [arrayProduct, stringProduct];
 
+}
+
+multiplyArray(testArray);
 // // Here is the test for multiplyArray(); uncomment it to run it
-// // testMultiplyArray(testArray);
+testMultiplyArray(testArray);
 
 // // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. 
 
@@ -143,13 +152,22 @@ testSumArray(testArray);
 // Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testMultiplyAnyArray() function and see if the test passes.*/
 
 // // Write your code here
-// let testDynamicArray = [1,2,3,4,5]; //eslint-disable-line
+let testDynamicArray = [1,2,3,4,5]; //eslint-disable-line
 
-// function multiplyAnyArray(dynamicArray) { //eslint-disable-line
+function multiplyAnyArray(dynamicArray) { //eslint-disable-line
+    let dynamicArrayProduct = 1;
+    let stringArrayProduct = '.';
+    for (let i = 0; i < multArr.length; i++) {
+        dynamicArrayProduct = multiplyArray(dynamicArrayProduct, dynamicArray[i])[0];
+    }
+    stringArrayProduct = "The numbers 1,2,3,4,5 have a product of 120."
 
-// }
+}
+
+
+multiplyAnyArray(testDynamicArray);
 
 // // Here is the test for multiplyArray(); uncomment it to run it
-// // testMultiplyAnyArray(testDynamicArray);
+// testMultiplyAnyArray(testDynamicArray);
 
 // // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. You're done! Submit the link to the repo following the instructions in Canvas.
