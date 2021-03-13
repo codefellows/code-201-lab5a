@@ -27,7 +27,7 @@ Write a function called multiply() that takes in two numbers as arguments and re
 Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testMultiply() function and see if the test passes.*/
 
 // Write your code here
-function multiply(a, b) { 
+function multiply(a, b) {
   return a * b;
   //return [total, `The product of ${a} and ${b} is ${total}.`];
 }
@@ -49,19 +49,19 @@ IMPORTANT DETAIL: You may not use the arithmetic operators + and * in this funct
 Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testSumAndMultiply() function and see if the test passes.*/
 
 // Write your code here
-function sumAndMultiply(a, b, c) { 
-  let add1 = sum(a,b);
-  let add2 = sum(add1,c);
-  let multi1 = multiply(a,b);
-  let multi2 = multiply(multi1,c);
-  console.log(add2);
+function sumAndMultiply(a, b, c) {
+  let add1 = sum(a, b);
+  let add2 = sum(add1, c);
+  let multi1 = multiply(a, b);
+  let multi2 = multiply(multi1, c);
+  //console.log(add2);
   //console.log(multi2);
   return [add2, multi2, `${a} and ${b} and ${c} sum to ${add2}.`, `The product of ${a} and ${b} and ${c} is ${multi2}.`];
 }
 
 
 // Here is the test for sumAndMultiply(); uncomment it to run it
-testSumAndMultiply(4,7,5);
+testSumAndMultiply(4, 7, 5);
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. Don't forget to create a new branch for your work on the next question!
 
@@ -76,15 +76,20 @@ IMPORTANT DETAIL: You may not use the arithmetic operator + in this function. To
 Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testSumArray() function and see if the test passes.*/
 
 // Write your code here
-let testArray = [2, 3, 4]; //eslint-disable-line
-
-function sumArray(sumArr) { //eslint-disable-line
-
+let testArray = [2, 3, 4];
+function sumArray(sumArr) {
+  let value1 = sumArr[0];
+  let value2 = sumArr[1];
+  let value3 = sumArr[2];
+  let add1 = sum(value1, value2);
+  let add2 = sum(add1, value3);
+  console.log(add2, `${value1},${value2},${value3} was passed in as an array of numbers, and ${add2} is their sum.`);
+  return [add2, `${value1},${value2},${value3} was passed in as an array of numbers, and ${add2} is their sum.`];
 }
 
 // Here is the test for sumArray(); uncomment it to run it
 
-// testSumArray(testArray);
+testSumArray(testArray);
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. Don't forget to create a new branch for your work on the next question!
 
@@ -99,19 +104,19 @@ IMPORTANT DETAIL: You may not use the arithmetic operator * in this function. To
 Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testMultiplyArray() function and see if the test passes.*/
 
 // Write your code here
-function multiplyArray(multArr) {
-  let value1 = multArr[0];
-  let value2 = multArr[1];
-  let value3 = multArr[2];
-  let multi1 = multiply(value1, value2);
-  let multi2 = multiply(multi1, value3);
-  console.log(multi2, `The numbers ${value1},${value2},${value3} have a product of ${multi2}.`)
-  return [multi2, `The numbers ${value1},${value2},${value3} have a product of ${multi2}.`];
+// function multiplyArray(multArr) {
+//   let value1 = multArr[0];
+//   let value2 = multArr[1];
+//   let value3 = multArr[2];
+//   let multi1 = multiply(value1, value2);
+//   let multi2 = multiply(multi1, value3);
+//   console.log(multi2, `The numbers ${ value1 }, ${ value2 }, ${ value3 } have a product of ${ multi2 }.`)
+//   return [multi2, `The numbers ${ value1 }, ${ value2 }, ${ value3 } have a product of ${ multi2 }.`];
 
-}
+//}
 
 // Here is the test for multiplyArray(); uncomment it to run it
-testMultiplyArray(testArray);
+//testMultiplyArray(testArray);
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. 
 

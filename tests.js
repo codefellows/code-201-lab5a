@@ -31,6 +31,7 @@ function testSumArray() { //eslint-disable-line
     console.log('%c TEST FOR sumArray() PASSES', 'color: green');
   } else {
     console.log('%c TEST FOR sumArray() FAILS', 'color: red');
+    
   }
 }
 
