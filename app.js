@@ -99,12 +99,19 @@ IMPORTANT DETAIL: You may not use the arithmetic operator * in this function. To
 Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testMultiplyArray() function and see if the test passes.*/
 
 // Write your code here
-function multiplyArray(multArr) { //eslint-disable-line
+function multiplyArray(multArr) {
+  let value1 = multArr[0];
+  let value2 = multArr[1];
+  let value3 = multArr[2];
+  let multi1 = multiply(value1, value2);
+  let multi2 = multiply(multi1, value3);
+  console.log(multi2, `The numbers ${value1},${value2},${value3} have a product of ${multi2}.`)
+  return [multi2, `The numbers ${value1},${value2},${value3} have a product of ${multi2}.`];
 
 }
 
 // Here is the test for multiplyArray(); uncomment it to run it
-// testMultiplyArray(testArray);
+testMultiplyArray(testArray);
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. 
 
