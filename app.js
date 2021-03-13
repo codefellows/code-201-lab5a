@@ -80,7 +80,6 @@ function sumArray(sumArr) { //eslint-disable-line
   let total = sum(first, sumArr[2])[0];
   return [total, sumArr[0] + ',' + sumArr[1] + ',' + sumArr[2] + ' was passed in as an array of numbers, and ' + total + ' is their sum.'];
 
-
 //   let first = sum(testArray[0],testArray[1]);
 //   let second = testArray[2][0];
 //   return [sum(first, second) , testArray[0] + ',' + testArray[1] + ',' + testArray[2] + ' was passed in as an array of numbers, and ' + sum(first, second) + ' is their sum.'];
@@ -103,9 +102,12 @@ IMPORTANT DETAIL: You may not use the arithmetic operator * in this function. To
 Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testMultiplyArray() function and see if the test passes.*/
 
 // Write your code here
-function multiplyArray(multArr) { //eslint-disable-line
-
-}
+// let testArray = [2, 3, 4]; //eslint-diasble-line
+// function multiplyArray(multArr) { //eslint-disable-line
+//   let first = multiply(multArr[0],multArr[1])[0];
+//   let total = multiply(first, multArr[2])[0];
+//   return [total,'The numbers ' + multArr[0] + ',' + multArr[1] + ',' + multArr[2] + ' have a product of ' + total + '.'];
+// }
 
 // Here is the test for multiplyArray(); uncomment it to run it
 // testMultiplyArray(testArray);
