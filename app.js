@@ -28,7 +28,7 @@ function sumArray(sumArr) { //eslint-disable-line
 testSumArray(testArray);
 
 function multiplyArray(multArr) { //eslint-disable-line
-  return [multiply(multiply(multArr[0], multArr[1])[0], multArr[2])[0], `The numbers ${multArr} have a product of ${multiply(multiply(multArr[0], multArr[1])[0], multArr[2])[0]}.`]
+  return [multiply(multiply(multArr[0], multArr[1])[0], multArr[2])[0], `The numbers ${multArr} have a product of ${multiply(multiply(multArr[0], multArr[1])[0], multArr[2])[0]}.`];
 }
 
 testMultiplyArray(testArray);
