@@ -46,12 +46,17 @@ IMPORTANT DETAIL: You may not use the arithmetic operators + and * in this funct
 Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testSumAndMultiply() function and see if the test passes.*/
 
 // Write your code here
-function sumAndMultiply(a, b, c) { //eslint-disable-line
-
+function sumAndMultiply(x, y, z) { //eslint-disable-line
+  let multThree = multiply(x, y);
+  let multFour = multiply(multThree[0], z);
+  let sumThree = sum(x, y);
+  let sumFour = sum(sumThree[0], z);
+  // let message = [sumFour[0], multFour[0], x + ' and' + y + ' and' + z + ' sum to ' + sumFour[0], 'The product of 4 and 7 and 5 is 140.'];
+  return [sumFour[0], multFour[0], x + ' and ' + y + ' and ' + z + ' sum to ' + sumFour[0] + '.', 'The product of ' + x + ' and ' + y + ' and ' + z + ' is ' + multFour[0] + '.'];
 }
 
 // Here is the test for sumAndMultiply(); uncomment it to run it
-// testSumAndMultiply(4,7,5);
+testSumAndMultiply(4,7,5);
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. Don't forget to create a new branch for your work on the next question!
 
