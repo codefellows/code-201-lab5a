@@ -8,6 +8,11 @@ Today in lab you will create your own repo using the [code-201-lab5a Template Re
 
 You are being given starter code for today, in the `index.html` and `app.js` files inside of this directory. The success of your code will be determined by whether it passes tests that are in the `tests.js` file. You do not need to do anything with `tests.js`, though you should take a look at it to see how it works.
 
+Steps to create your repo using the Template:
+  1. Click the green `Use this template` button
+  1. Name your repo
+  1. Click the green `Create repository from template` button
+
 Here are a couple of things to keep in mind:
 
 * Create a new branch for each code problem, and merge each branch into *main* on GitHub (and then pull back into main on your laptop!) when the problem is completed. Do the problems in order. Don't forget to pull the updated main branch from GitHub into your local main branch each time you merge a pull request, then make a new branch from main for the next problem.
