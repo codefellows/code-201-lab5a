@@ -2,7 +2,7 @@
 
 ## Problem Domain
 
-Today in lab you will fork and clone a GitHub repo, and then create solutions to some code problems such that your solutions pass the included tests.
+Today in lab you will create your own repo using the [code-201-lab5a Template Repo](https://github.com/codefellows/code-201-lab5a){:target="_blank"}, and then create solutions to some code problems such that your solutions pass the included tests.
 
 ## Instructions
 
@@ -21,4 +21,9 @@ This lab will have starter code provided. Work with your instructor directly to 
 
 ### Submission Instructions
 
-Make sure your *main* branch is up to date with your most recent code. Create a new pull request on GitHub from your main branch to `<your school's>` main branch, making sure that the left dropdown `base repository` says `<your school name>/<your course code>` and the right dropdown `head repository` says `<your github username>/<lab name>`
+Make sure your *main* branch is up to date with your most recent code. 
+- In the submission area, paste a link to your GitHub repo for this project.
+- Add a comment to this Canvas submission with answers to the following questions.
+  - How did this go, overall?
+  - What observations or questions do you have about what you've learned so far?
+  - How long did it take you to complete this assignment? And, before you started, how long did you think it would take you to complete this assignment?
