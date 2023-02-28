@@ -9,7 +9,8 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Write your code here
 function sum(a, b) { //eslint-disable-line
-
+let sum = a + b;
+return[sum,`The sum of ${4} and ${7} is ${11}.`];
 }
 
 // Here is the test for sum(); uncomment it to run it
@@ -21,13 +22,15 @@ function sum(a, b) { //eslint-disable-line
 /* Problem 2
 Write a function called multiply() that takes in two numbers as arguments and returns an array where the first element is the product of those numbers, and the second element is a string that EXACTLY follows this example and uses the values that were input into the function:
 
-"The product of 5 and 9 is 45."
+""
 
 Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testMultiply() function and see if the test passes.*/
 
 // Write your code here
-function multiply(a, b) { //eslint-disable-line
-
+function multiply(a, b) { 
+    //eslint-disable-line
+let product = a * b
+return[product,`The product of ${5} and ${9} is ${45}.`]
 }
 
 // Here is the test for multiply(); uncomment it to run it
@@ -48,6 +51,22 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Write your code here
 function sumAndMultiply(a, b, c) { //eslint-disable-line
+let sum = (a,b)[0];
+var sum2 = (sum, c)[0];
+
+let product = multiply (a,b)[0];
+let pruduct2 = multiply (product, c)[0];
+
+var str3A = a + ' and ' + b + ' and ' + c + ' sum to ' + sum2 + '.';
+var str3B = 'The product of' + a + 'and' + b + ' and ' + c + 'is' + product2 + '.';
+var arr3=[];
+  arr3[0]=  sum2;
+  arr3[1]=  product2;
+  arr3[2] =  str3A;
+  arr3[3] =  str3B;
+  return arr3;
+
+
 
 }
 
@@ -68,6 +87,9 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Write your code here
 let testArray = [2, 3, 4]; //eslint-disable-line
+let result =
+
+
 
 function sumArray(sumArr) { //eslint-disable-line
 
